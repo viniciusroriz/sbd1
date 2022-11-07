@@ -10,12 +10,14 @@
 #### Papéis
 - Cada CE que participa de um CR tem um papel, sua indicação opcional pode facilitar o entendimento da modelagem.
 - ex: CE Pessoa - matriculada em - CR matrícula - matricula - CE disciplina
-- Indicação deve ser feita quando há ambiguidade na interpretação
-- Autorelacionamento: um CE pode ter mais de um papel no mesmo CR. ex: CE Disciplina e CR Pré-requisito, a disciplina é prerequisito, e tem prerequisito.
+- Auto-relacionamento: um CE pode ter mais de um papel no mesmo CR. ex: CE Disciplina e CR Pré-requisito, a disciplina é prerequisito, e tem prerequisito.
+- Indicação deve ser feita quando há ambiguidade na interpretação ou quabdi há auto-relacionamento
 - Cardinalidade: representa o numero de relacionamentos que cada CE pode participar
   - 1 - 1: ementa para disciplina
   - 1 - N: professor para turma
-  - N - N: aluno para disciplina
+  - N - M: aluno para disciplina
+- também pode ser representada de forma mais completa, mostrando o mínimo e máximo. ex: 
+  - (0, N) - (1, N): Pedido possui Itens
   
 ### Atributos 
 - valores que representam propriedades das entidades e relacionamentos no mundo real. ex: o CE Pessoa teria o atributo Nome
